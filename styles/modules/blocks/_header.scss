@@ -1,0 +1,13 @@
+.header {
+   padding: 60px 0 60px 0;
+   &__title {
+      @include text-regular(112px, 400, normal, 112px);
+      margin: 0 0 20px 0;
+      padding: 0 10px;
+   }
+   &__subtitle {
+      @include text-regular(80px, 400, normal, 70px);
+      margin: 0 0 230px;
+      padding: 0 10px;
+   }
+}

@@ -1,0 +1,50 @@
+.form {
+   display: grid;
+   max-width: 348px;
+   grid-template-columns: 1fr max-content;
+   padding-left: 10px;
+
+
+   &__input {
+      background-color: rgba(142, 142, 152, 0.2);
+      border-radius: 8px 0px 0px 8px;
+      border: none;
+      width: 316px;
+      height: 50px;
+      @include text-regular(14px, 400, normal, 24px);
+      color: $primary-color;
+      padding: 0 16px;
+      outline:none;
+
+      &:hover {
+         background: rgba(142, 142, 152, 0.3);
+      }
+   }
+
+   &__button-submit {
+      background-color: $button-color;
+      width: 221px;
+      height: 50px;
+      border: none;
+      border-radius: 0px 8px 8px 0px;
+      color: $primary-color;
+      padding: 13px 16px;
+      cursor: pointer;
+   }
+
+   &__button-submit-text {
+      margin: 0;
+      @include text-regular(14px, 400, normal, 24px);
+      text-align: center;
+      letter-spacing: 0.375px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+   }
+
+   &__label {
+      @include text-regular(12px, 400, normal, 18px);
+      color: $button-color;
+      padding: 12px 0 0 16px;
+   }
+}

@@ -1,0 +1,21 @@
+.logo {
+   display: flex;
+   margin-bottom: 65px;
+   padding-left: 10px;
+
+   &__text {
+      margin: 0;
+      @include text-regular(22px, 400, normal, 30px);
+      display: flex;
+      align-items: center;
+   }
+
+   &__notice {
+      @include text-regular(12px, 400, normal, 12px);
+      background-color: $notice-color;
+      color: $primary-bg-color;
+      padding: 4px 8px;
+      border-radius: 4px;
+      margin-left: 20px;
+   }
+}
