@@ -361,7 +361,7 @@ template {
 }
 
 .header {
-  padding: 60px 0 60px 0;
+  padding: 60px 0;
 }
 .header__title {
   font-family: "Roboto", "arial", sans-serif;
@@ -370,7 +370,6 @@ template {
   font-style: normal;
   line-height: 112px;
   margin: 0 0 20px 0;
-  padding: 0 10px;
 }
 .header__subtitle {
   font-family: "Roboto", "arial", sans-serif;
@@ -379,18 +378,112 @@ template {
   font-style: normal;
   line-height: 70px;
   margin: 0 0 230px;
-  padding: 0 10px;
 }
 
+@media screen and (max-width: 1024px) {
+  .header__title {
+    font-family: "Roboto", "arial", sans-serif;
+    font-size: 55px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 65px;
+  }
+
+  .header__subtitle {
+    font-family: "Roboto", "arial", sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 55px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 60px 0 32px 0;
+  }
+
+  .header__title {
+    font-family: "Roboto", "arial", sans-serif;
+    font-size: 70px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 90px;
+    margin: 0;
+  }
+
+  .header__subtitle {
+    font-family: "Roboto", "arial", sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 60px;
+    margin: 0 0 470px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .header__title {
+    font-family: "Roboto", "arial", sans-serif;
+    font-size: 52px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 55px;
+    margin: 0 0 10px 0;
+  }
+
+  .header__subtitle {
+    font-family: "Roboto", "arial", sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 36px;
+    margin: 0 0 260px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .header {
+    padding: 24px 0 20px 0;
+  }
+
+  .header__title {
+    font-family: "Roboto", "arial", sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 60px;
+  }
+
+  .header__subtitle {
+    font-family: "Roboto", "arial", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 38px;
+  }
+}
 .wrapper {
   margin: 0 auto;
   max-width: 1140px;
 }
 
+@media screen and (max-width: 1024px) {
+  .wrapper {
+    padding: 0 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .wrapper {
+    padding: 0 60px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .wrapper {
+    padding: 0 20px;
+  }
+}
 .logo {
   display: flex;
   margin-bottom: 60px;
-  padding-left: 16px;
+  margin-left: 6px;
 }
 .logo__text {
   margin: 0;
@@ -415,18 +508,39 @@ template {
   margin-left: 20px;
 }
 
+@media screen and (max-width: 768px) {
+  .logo {
+    margin-bottom: 70px;
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 320px) {
+  .logo {
+    margin-bottom: 60px;
+  }
+
+  .logo__text {
+    font-family: "Roboto", "arial", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 28px;
+  }
+
+  .logo__notice {
+    margin-left: 16px;
+  }
+}
 .form {
-  display: grid;
-  max-width: 348px;
-  grid-template-columns: 1fr -webkit-max-content;
-  grid-template-columns: 1fr max-content;
-  padding-left: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 760px;
 }
 .form__input {
+  box-sizing: border-box;
   background-color: rgba(142, 142, 152, 0.2);
   border-radius: 8px 0px 0px 8px;
   border: none;
-  width: 316px;
   height: 50px;
   font-family: "Roboto", "arial", sans-serif;
   font-size: 14px;
@@ -434,21 +548,25 @@ template {
   font-style: normal;
   line-height: 24px;
   color: #FFFFFF;
-  padding: 0 16px;
   outline: none;
+  padding: 13px 16px;
+  width: 100%;
+  max-width: 348px;
 }
 .form__input:hover {
   background: rgba(142, 142, 152, 0.3);
 }
 .form__button-submit {
+  box-sizing: border-box;
   background-color: #47474C;
-  width: 221px;
   height: 50px;
   border: none;
   border-radius: 0px 8px 8px 0px;
   color: #FFFFFF;
-  padding: 13px 16px;
+  padding: 13px 35px 13px 16px;
   cursor: pointer;
+  position: relative;
+  max-width: 221px;
 }
 .form__button-submit-text {
   margin: 0;
@@ -471,4 +589,60 @@ template {
   line-height: 18px;
   color: #47474C;
   padding: 12px 0 0 11px;
+}
+.form__button-submit-text-smile {
+  margin: 0;
+  position: absolute;
+  right: 10px;
+  bottom: 16px;
+  font-family: "Roboto", "arial", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 20px;
+  letter-spacing: 0.38px;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .form__input {
+    max-width: calc(100% - 221px);
+  }
+
+  .form__label {
+    padding: 10px 0 0 10px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .form__input {
+    max-width: calc(100% - 51px);
+  }
+
+  .form__button-submit {
+    max-width: 51px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .form__label {
+    padding: 10px 0 0 3px;
+  }
+
+  .form__button-submit {
+    width: 51px;
+    padding: 20px;
+  }
+
+  .form__button-submit-text {
+    margin-left: 12px;
+  }
+
+  .form__button-submit-text-smile {
+    font-family: "Roboto", "arial", sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 10px;
+    right: 19px;
+    bottom: 20px;
+  }
 }
