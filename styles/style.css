@@ -866,7 +866,7 @@ template {
 
 @media screen and (max-width: 600px) {
   .cards {
-    padding: 40px 0;
+    padding: 40px 0 30px 0;
   }
   .cards__box {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -894,6 +894,87 @@ template {
     margin: 0 0 100px 0;
   }
   .cards__price {
+    font-family: "Roboto", "arial", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 18px;
+  }
+}
+.guarantee {
+  padding: 60px 0;
+}
+.guarantee__title {
+  font-family: "Roboto", "arial", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 40px;
+  margin: 0 0 60px 0;
+}
+.guarantee__box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(265px, 1fr));
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  gap: 20px;
+}
+.guarantee__item {
+  padding: 20px;
+  background-color: #1C1C1E;
+  border-radius: 10px;
+}
+.guarantee__subtitle {
+  font-family: "Roboto", "arial", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 18px;
+  color: #EAEAF0;
+  margin: 0 0 38px 0;
+}
+.guarantee__text {
+  font-family: "Roboto", "arial", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 19px;
+  margin: 0;
+  color: #8E8E98;
+}
+
+@media screen and (max-width: 768px) {
+  .guarantee__title {
+    font-family: "Roboto", "arial", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 30px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .guarantee {
+    padding: 40px 0 30px 0;
+  }
+  .guarantee__item {
+    padding: 20px 20px 38px;
+  }
+  .guarantee__item:nth-of-type(1) {
+    padding: 20px;
+  }
+  .guarantee__title {
+    font-family: "Roboto", "arial", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 18px;
+    margin: 0 0 40px 0;
+  }
+  .guarantee__subtitle {
+    margin: 0 0 36px 0;
+  }
+  .guarantee__text {
     font-family: "Roboto", "arial", sans-serif;
     font-size: 12px;
     font-weight: 400;
