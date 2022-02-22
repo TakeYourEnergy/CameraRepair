@@ -622,6 +622,10 @@ template {
   .form__button-submit {
     max-width: 51px;
   }
+
+  .form__button-submit-text {
+    display: none;
+  }
 }
 @media screen and (max-width: 320px) {
   .form__label {
@@ -1125,6 +1129,10 @@ template {
 @media screen and (max-width: 686px) {
   .footer__button-submit {
     max-width: 51px;
+  }
+
+  .footer__button-submit-text {
+    display: none;
   }
 }
 @media screen and (max-width: 438px) {
