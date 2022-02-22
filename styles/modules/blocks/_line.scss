@@ -1,0 +1,16 @@
+.line {
+  border-bottom: 2px solid $color-line;
+  margin: 180px 160px 0;
+}
+
+@include tablet {
+  .line {
+    margin: 150px 60px 0;
+  }
+}
+
+@include mobile {
+  .line {
+    margin: 150px 20px 0;
+  }
+}
