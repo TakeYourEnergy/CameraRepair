@@ -44,8 +44,7 @@ h1 {
  * 2. Show the overflow in Edge and IE.
  */
 hr {
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
   /* 1 */
   height: 0;
   /* 1 */
@@ -189,9 +188,9 @@ select {
  * Correct the inability to style clickable types in iOS and Safari.
  */
 button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
+[type=button],
+[type=reset],
+[type=submit] {
   -webkit-appearance: button;
 }
 
@@ -199,9 +198,9 @@ button,
  * Remove the inner border and padding in Firefox.
  */
 button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
@@ -210,9 +209,9 @@ button::-moz-focus-inner,
  * Restore the focus styles unset by the previous rule.
  */
 button:-moz-focusring,
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -230,8 +229,7 @@ fieldset {
  *    `fieldset` elements in all browsers.
  */
 legend {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   /* 1 */
   color: inherit;
   /* 2 */
@@ -263,10 +261,9 @@ textarea {
  * 1. Add the correct box sizing in IE 10.
  * 2. Remove the padding in IE 10.
  */
-[type="checkbox"],
-[type="radio"] {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box;
   /* 1 */
   padding: 0;
   /* 2 */
@@ -275,8 +272,8 @@ textarea {
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
   height: auto;
 }
 
@@ -284,7 +281,7 @@ textarea {
  * 1. Correct the odd appearance in Chrome and Safari.
  * 2. Correct the outline style in Safari.
  */
-[type="search"] {
+[type=search] {
   -webkit-appearance: textfield;
   /* 1 */
   outline-offset: -2px;
@@ -294,7 +291,7 @@ textarea {
 /**
  * Remove the inner padding in Chrome and Safari on macOS.
  */
-[type="search"]::-webkit-search-decoration {
+[type=search]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -342,21 +339,19 @@ template {
 }
 
 @font-face {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
   font-display: swap;
   src: url("../vendor/fonts/roboto-medium.woff2") format("woff2"), url("../vendor/fonts/roboto-medium.woff") format("woff");
 }
-
 @font-face {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
   src: url("../vendor/fonts/roboto-regular.woff2") format("woff2"), url("../vendor/fonts/roboto-regular.woff") format("woff");
 }
-
 .page {
   background-color: #000000;
   max-width: 1440px;
@@ -368,7 +363,6 @@ template {
 .header {
   padding: 60px 0;
 }
-
 .header__title {
   font-family: "Roboto", "arial", sans-serif;
   font-size: 112px;
@@ -377,7 +371,6 @@ template {
   line-height: 112px;
   margin: 0 0 20px 0;
 }
-
 .header__subtitle {
   font-family: "Roboto", "arial", sans-serif;
   font-size: 80px;
@@ -395,6 +388,7 @@ template {
     font-style: normal;
     line-height: 65px;
   }
+
   .header__subtitle {
     font-family: "Roboto", "arial", sans-serif;
     font-size: 50px;
@@ -403,11 +397,11 @@ template {
     line-height: 55px;
   }
 }
-
 @media screen and (max-width: 768px) {
   .header {
     padding: 60px 0 32px 0;
   }
+
   .header__title {
     font-family: "Roboto", "arial", sans-serif;
     font-size: 70px;
@@ -416,6 +410,7 @@ template {
     line-height: 90px;
     margin: 0;
   }
+
   .header__subtitle {
     font-family: "Roboto", "arial", sans-serif;
     font-size: 50px;
@@ -425,7 +420,6 @@ template {
     margin: 0 0 470px;
   }
 }
-
 @media screen and (max-width: 600px) {
   .header__title {
     font-family: "Roboto", "arial", sans-serif;
@@ -435,6 +429,7 @@ template {
     line-height: 55px;
     margin: 0 0 10px 0;
   }
+
   .header__subtitle {
     font-family: "Roboto", "arial", sans-serif;
     font-size: 32px;
@@ -444,11 +439,11 @@ template {
     margin: 0 0 260px;
   }
 }
-
 @media screen and (max-width: 320px) {
   .header {
     padding: 24px 0 20px 0;
   }
+
   .header__title {
     font-family: "Roboto", "arial", sans-serif;
     font-size: 50px;
@@ -456,6 +451,7 @@ template {
     font-style: normal;
     line-height: 60px;
   }
+
   .header__subtitle {
     font-family: "Roboto", "arial", sans-serif;
     font-size: 30px;
@@ -464,7 +460,6 @@ template {
     line-height: 38px;
   }
 }
-
 .wrapper {
   margin: 0 160px;
   max-width: 1140px;
@@ -476,27 +471,21 @@ template {
     margin: 0;
   }
 }
-
 @media screen and (max-width: 768px) {
   .wrapper {
     padding: 0 60px;
   }
 }
-
 @media screen and (max-width: 600px) {
   .wrapper {
     padding: 0 20px;
   }
 }
-
 .logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-bottom: 60px;
   margin-left: 6px;
 }
-
 .logo__text {
   margin: 0;
   font-family: "Roboto", "arial", sans-serif;
@@ -504,14 +493,9 @@ template {
   font-weight: 400;
   font-style: normal;
   line-height: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 .logo__notice {
   font-family: "Roboto", "arial", sans-serif;
   font-size: 12px;
@@ -531,11 +515,11 @@ template {
     margin-left: 0;
   }
 }
-
 @media screen and (max-width: 320px) {
   .logo {
     margin-bottom: 60px;
   }
+
   .logo__text {
     font-family: "Roboto", "arial", sans-serif;
     font-size: 20px;
@@ -543,23 +527,18 @@ template {
     font-style: normal;
     line-height: 28px;
   }
+
   .logo__notice {
     margin-left: 16px;
   }
 }
-
 .form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   max-width: 760px;
 }
-
 .form__input {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   background-color: rgba(142, 142, 152, 0.2);
   border-radius: 8px 0px 0px 8px;
   border: none;
@@ -575,14 +554,11 @@ template {
   width: 100%;
   max-width: 348px;
 }
-
 .form__input:hover {
   background: rgba(142, 142, 152, 0.3);
 }
-
 .form__button-submit {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   background-color: #47474C;
   height: 50px;
   border: none;
@@ -593,7 +569,6 @@ template {
   position: relative;
   max-width: 221px;
 }
-
 .form__button-submit-text {
   margin: 0;
   font-family: "Roboto", "arial", sans-serif;
@@ -607,7 +582,6 @@ template {
   white-space: nowrap;
   overflow: hidden;
 }
-
 .form__label {
   font-family: "Roboto", "arial", sans-serif;
   font-size: 12px;
@@ -617,7 +591,6 @@ template {
   color: #47474C;
   padding: 12px 0 0 11px;
 }
-
 .form__button-submit-text-smile {
   margin: 0;
   position: absolute;
@@ -636,31 +609,34 @@ template {
   .form__input {
     max-width: calc(100% - 221px);
   }
+
   .form__label {
     padding: 10px 0 0 10px;
   }
 }
-
 @media screen and (max-width: 600px) {
   .form__input {
     max-width: calc(100% - 51px);
   }
+
   .form__button-submit {
     max-width: 51px;
   }
 }
-
 @media screen and (max-width: 320px) {
   .form__label {
     padding: 10px 0 0 3px;
   }
+
   .form__button-submit {
     width: 51px;
     padding: 20px;
   }
+
   .form__button-submit-text {
     margin-left: 12px;
   }
+
   .form__button-submit-text-smile {
     font-family: "Roboto", "arial", sans-serif;
     font-size: 10px;
@@ -671,17 +647,12 @@ template {
     bottom: 20px;
   }
 }
-
 .gallery {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   padding: 60px 30px;
   gap: 20px;
 }
-
 .gallery__photo-1 {
   background-image: url("../images/photo1.jpg");
   background-repeat: no-repeat;
@@ -691,19 +662,16 @@ template {
   height: 230px;
   border-radius: 10px;
 }
-
 .gallery__color-last {
   background-color: #FFD233;
   width: calc(100% - 468px);
   border-radius: 10px;
 }
-
 .gallery__color-first {
   background-color: #25E197;
   width: calc(100% - 750px);
   border-radius: 10px;
 }
-
 .gallery__photo-2 {
   background-image: url("../images/photo1.jpg");
   background-repeat: no-repeat;
@@ -726,7 +694,6 @@ template {
     width: calc(100% - 520px);
   }
 }
-
 @media screen and (max-width: 768px) {
   .gallery {
     padding: 20px 60px 60px;
@@ -739,7 +706,6 @@ template {
     width: calc(100% - 475px);
   }
 }
-
 @media screen and (max-width: 600px) {
   .gallery {
     padding: 20px 20px;
@@ -765,11 +731,9 @@ template {
     border-radius: 4px;
   }
 }
-
 .description {
   padding: 60px 0;
 }
-
 .description__text {
   font-family: "Roboto", "arial", sans-serif;
   font-size: 32px;
@@ -779,7 +743,6 @@ template {
   color: #8E8E98;
   margin: 0 0 60px 0;
 }
-
 .description__text-title {
   font-family: "Roboto", "arial", sans-serif;
   font-size: 32px;
@@ -798,6 +761,7 @@ template {
     font-style: normal;
     line-height: 25px;
   }
+
   .description__text-title {
     font-family: "Roboto", "arial", sans-serif;
     font-size: 23px;
@@ -806,7 +770,6 @@ template {
     line-height: 25px;
   }
 }
-
 @media screen and (max-width: 768px) {
   .description__text {
     font-family: "Roboto", "arial", sans-serif;
@@ -815,6 +778,7 @@ template {
     font-style: normal;
     line-height: 30px;
   }
+
   .description__text-title {
     font-family: "Roboto", "arial", sans-serif;
     font-size: 20px;
@@ -823,7 +787,6 @@ template {
     line-height: 30px;
   }
 }
-
 @media screen and (max-width: 320px) {
   .description {
     padding: 40px 0 30px;
@@ -844,33 +807,26 @@ template {
     line-height: 18px;
   }
 }
-
 .cards {
   padding: 60px 0;
 }
-
 .cards__box {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(550px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
   padding: 0;
   margin: 0;
   list-style-type: none;
   gap: 20px;
 }
-
 .cards__item {
   padding: 40px;
   background-color: #1C1C1E;
   border-radius: 16px;
 }
-
 .cards__item:hover {
   cursor: pointer;
   background-color: #232327;
 }
-
 .cards__subtitle {
   font-family: "Roboto", "arial", sans-serif;
   font-size: 18px;
@@ -880,7 +836,6 @@ template {
   color: #8E8E98;
   margin: 0 0 20px 0;
 }
-
 .cards__title {
   font-family: "Roboto", "arial", sans-serif;
   font-size: 32px;
@@ -890,7 +845,6 @@ template {
   color: #FFFFFF;
   margin: 0 0 40px 0;
 }
-
 .cards__text {
   font-family: "Roboto", "arial", sans-serif;
   font-size: 32px;
@@ -900,7 +854,6 @@ template {
   color: #8E8E98;
   margin: 0 0 40px 0;
 }
-
 .cards__price {
   font-family: "Roboto", "arial", sans-serif;
   font-size: 14px;
@@ -916,8 +869,7 @@ template {
     padding: 40px 0 30px 0;
   }
   .cards__box {
-    -ms-grid-columns: (minmax(280px, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   }
   .cards__item {
     padding: 20px;
@@ -949,11 +901,9 @@ template {
     line-height: 18px;
   }
 }
-
 .guarantee {
   padding: 60px 0;
 }
-
 .guarantee__title {
   font-family: "Roboto", "arial", sans-serif;
   font-size: 32px;
@@ -962,24 +912,19 @@ template {
   line-height: 40px;
   margin: 0 0 60px 0;
 }
-
 .guarantee__box {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(265px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(265px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(265px, 1fr));
   padding: 0;
   margin: 0;
   list-style-type: none;
   gap: 20px;
 }
-
 .guarantee__item {
   padding: 20px;
   background-color: #1C1C1E;
   border-radius: 10px;
 }
-
 .guarantee__subtitle {
   font-family: "Roboto", "arial", sans-serif;
   font-size: 18px;
@@ -989,7 +934,6 @@ template {
   color: #EAEAF0;
   margin: 0 0 38px 0;
 }
-
 .guarantee__text {
   font-family: "Roboto", "arial", sans-serif;
   font-size: 15px;
@@ -1009,7 +953,6 @@ template {
     line-height: 30px;
   }
 }
-
 @media screen and (max-width: 600px) {
   .guarantee {
     padding: 40px 0 30px 0;
@@ -1039,11 +982,9 @@ template {
     line-height: 18px;
   }
 }
-
 .support {
   padding: 60px 0;
 }
-
 .support__title {
   font-family: "Roboto", "arial", sans-serif;
   font-size: 32px;
@@ -1052,10 +993,8 @@ template {
   line-height: 40px;
   margin: 0 0 90px 0;
 }
-
 .support__link {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   text-decoration: none;
   color: inherit;
   background-color: #47474C;
@@ -1071,7 +1010,6 @@ template {
   text-align: center;
   letter-spacing: 0.38px;
 }
-
 .support__text {
   font-family: "Roboto", "arial", sans-serif;
   font-size: 32px;
@@ -1091,9 +1029,11 @@ template {
     line-height: 30px;
     margin: 0 0 80px 0;
   }
+
   .support__link {
     margin: 0 0 40px 0;
   }
+
   .support__text {
     font-family: "Roboto", "arial", sans-serif;
     font-size: 20px;
@@ -1102,7 +1042,6 @@ template {
     line-height: 30px;
   }
 }
-
 @media screen and (max-width: 320px) {
   .support {
     padding: 40px 0 30px 0;
@@ -1133,7 +1072,6 @@ template {
     line-height: 18px;
   }
 }
-
 .line {
   border-bottom: 2px solid #151515;
   margin: 180px 160px 0;
@@ -1144,25 +1082,20 @@ template {
     margin: 150px 60px 0;
   }
 }
-
 @media screen and (max-width: 320px) {
   .line {
     margin: 150px 20px 0;
   }
 }
-
 .footer {
   padding: 60px 0;
 }
-
 .footer__logo {
   margin: 0 0 84px 0;
 }
-
 .footer__label {
   padding: 18px 0 0 0;
 }
-
 .footer__copywriting {
   font-family: "Roboto", "arial", sans-serif;
   font-size: 12px;
@@ -1172,36 +1105,33 @@ template {
   color: #47474C;
   margin: 0;
   text-align: right;
-  -webkit-transform: translateY(-19px);
-          transform: translateY(-19px);
+  transform: translateY(-19px);
 }
 
 @media screen and (max-width: 768px) {
   .footer__form {
     margin-bottom: 60px;
   }
+
   .footer__input {
     max-width: 348px;
   }
+
   .footer__copywriting {
     text-align: left;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
   }
 }
-
 @media screen and (max-width: 686px) {
   .footer__button-submit {
     max-width: 51px;
   }
 }
-
 @media screen and (max-width: 438px) {
   .footer__input {
     max-width: 229px;
   }
 }
-
 @media screen and (max-width: 320px) {
   .footer {
     padding: 30px 0 20px 0;
