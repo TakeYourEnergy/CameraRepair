@@ -21,6 +21,7 @@ form.addEventListener('submit', (e) => {
       smile.innerHTML = '&#128140;'
     }
   }
+  e.target.reset()
 })
 
 footerForm.addEventListener('submit', (e) => {
@@ -34,6 +35,7 @@ footerForm.addEventListener('submit', (e) => {
       footerSmile.innerHTML = '&#128140;'
     }
   }
+  e.target.reset()
 })
 
 
