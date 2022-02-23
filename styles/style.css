@@ -710,7 +710,6 @@ template {
   .gallery__photo-1 {
     width: 100%;
     height: 142px;
-    border-radius: 4px;
   }
   .gallery__color-last {
     width: 100%;
@@ -725,7 +724,6 @@ template {
   .gallery__photo-2 {
     width: 100%;
     height: 211px;
-    border-radius: 4px;
   }
 }
 .description {
