@@ -31,9 +31,13 @@
 @media screen and (max-width: 686px) {
   .footer__button-submit {
     max-width: 51px;
+    padding: 16px
   }
   .footer__button-submit-text{
     display: none;
+  }
+  .footer__smile {
+    margin-left: 0px;
   }
 }
 
@@ -52,5 +56,8 @@
     &__label {
       padding: 10px 0 0 0;
     }
+  }
+  .footer__button-submit {
+    padding: 20px
   }
 }
