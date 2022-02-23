@@ -659,10 +659,6 @@ template {
   gap: 20px;
 }
 .gallery__photo-1 {
-  background-image: url("../images/photo1.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   width: 448px;
   height: 230px;
   border-radius: 10px;
@@ -678,10 +674,6 @@ template {
   border-radius: 10px;
 }
 .gallery__photo-2 {
-  background-image: url("../images/photo1.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   width: 730px;
   height: 552px;
   border-radius: 10px;
