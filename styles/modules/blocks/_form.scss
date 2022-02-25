@@ -1,0 +1,103 @@
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 760px;
+
+  &__input {
+    box-sizing: border-box;
+    background-color: rgba(142, 142, 152, 0.2);
+    border-radius: 8px 0px 0px 8px;
+    border: none;
+    height: 50px;
+    @include text-regular(14px, 400, normal, 24px);
+    color: $primary-color;
+    outline:none;
+    padding: 13px 16px;
+    width: 100%;
+    max-width: 348px;
+
+    &:hover {
+        background: rgba(142, 142, 152, 0.3);
+    }
+  }
+
+  &__button-submit {
+    display: flex;
+    box-sizing: border-box;
+    background-color: $button-color;
+    height: 50px;
+    border: none;
+    border-radius: 0px 8px 8px 0px;
+    color: $primary-color;
+    padding: 13px 11px 13px 16px;
+    cursor: pointer;
+    position: relative;
+    width: 221px;
+  }
+
+  &__button-submit-text {
+    margin: 0;
+    @include text-regular(14px, 400, normal, 24px);
+    text-align: center;
+    letter-spacing: 0.375px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  &__label {
+    @include text-regular(12px, 400, normal, 18px);
+    color: $button-color;
+    padding: 12px 0 0 11px;
+  }
+
+  &__button-submit-text-smile {
+    margin: 0;
+    @include text-regular(13px, 400, normal, 20px);
+    letter-spacing: 0.38px;
+    text-align: center;
+    margin-left: 7px
+  }
+}
+
+@include tablet {
+  .form__input {
+    max-width: calc(100% - 221px);
+  }
+  .form__label {
+    padding: 10px 0 0 10px;
+  }
+}
+
+@include mini-tablet {
+  .form__input {
+    max-width: calc(100% - 51px);
+  }
+  .form__button-submit {
+    width: 51px;
+    padding: 16px
+  }
+  .form__button-submit-text {
+    display: none;
+  }
+  .form__button-submit-text-smile {
+    margin-left: 0;
+  }
+}
+
+@include mobile {
+  .form__label {
+    padding: 10px 0 0 3px;
+  }
+  .form__button-submit {
+    padding: 20px
+  }
+  .form__button-submit-text {
+    margin-left: 12px;
+  }
+  .form__button-submit-text-smile {
+    @include text-regular(10px, 400, normal, 10px);
+    // right: 19px;
+    // bottom: 20px
+  }
+}

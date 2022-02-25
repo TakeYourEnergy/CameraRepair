@@ -1,0 +1,44 @@
+.description {
+  padding: 60px 0;
+  &__text {
+    @include text-regular(32px, 400, normal, 40px);
+    color: $color-text;
+    margin: 0 0 60px 0;
+  }
+  &__text-title {
+    @include text-regular(32px, 400, normal, 40px);
+    color: $primary-color;
+    margin: 0;
+  }
+}
+
+@include netbook {
+  .description__text {
+    @include text-regular(23px, 400, normal, 25px);
+  }
+  .description__text-title {
+    @include text-regular(23px, 400, normal, 25px);
+  }
+}
+
+@include tablet {
+  .description__text {
+    @include text-regular(20px, 400, normal, 30px);
+  }
+  .description__text-title {
+    @include text-regular(20px, 400, normal, 30px);
+  }
+}
+
+@include mobile {
+  .description {
+    padding: 40px 0 30px;
+    &__text {
+      @include text-regular(12px, 400, normal, 18px);
+      margin: 0 0 20px 0;
+    }
+    &__text-title {
+      @include text-regular(12px, 400, normal, 18px);
+    }
+  }
+}

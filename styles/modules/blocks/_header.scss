@@ -1,0 +1,63 @@
+.header {
+  padding: 60px 0;
+
+  &__title {
+    @include text-regular(112px, 400, normal, 112px);
+    margin: 0 0 20px 0;
+  }
+
+  &__subtitle {
+    @include text-regular(80px, 400, normal, 70px);
+    margin: 0 0 230px;
+  }
+}
+
+@include netbook {
+  .header__title {
+    @include text-regular(55px, 400, normal, 65px);
+  }
+
+  .header__subtitle {
+    @include text-regular(50px, 400, normal, 55px);
+  }
+}
+
+@include tablet {
+  .header {
+    padding: 60px 0 32px 0;
+  }
+  .header__title {
+    @include text-regular(70px, 400, normal, 90px);
+    margin: 0;
+  }
+  .header__subtitle {
+    @include text-regular(50px, 400, normal, 60px);
+    margin: 0 0 470px;
+  }
+}
+
+@include mini-tablet {
+  .header__title {
+    @include text-regular(52px, 400, normal, 55px);
+    margin: 0 0 10px 0;
+  }
+    .header__subtitle {
+      @include text-regular(32px, 400, normal, 36px);
+      margin: 0 0 260px;
+  }
+}
+
+
+@include mobile {
+  .header {
+    padding: 24px 0 20px 0;
+  }
+  .header__title {
+    @include text-regular(50px, 400, normal, 60px);
+  }
+  .header__subtitle {
+    @include text-regular(30px, 400, normal, 38px);
+  }
+}
+
+

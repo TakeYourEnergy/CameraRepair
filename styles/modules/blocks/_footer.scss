@@ -1,0 +1,63 @@
+.footer {
+  padding: 60px 0;
+  &__logo {
+    margin: 0 0 84px 0;
+  }
+  &__label {
+    padding: 18px 0 0 0;
+  }
+  &__copywriting {
+    @include text-regular(12px, 400, normal, 18px);
+    color: $button-color;
+    margin: 0;
+    text-align: right;
+    transform: translateY(-19px);
+  }
+}
+
+@include tablet {
+  .footer__form {
+    margin-bottom: 60px;
+  }
+  .footer__input {
+    max-width: 348px;
+  }
+  .footer__copywriting {
+    text-align: left;
+    transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 686px) {
+  .footer__button-submit {
+    max-width: 51px;
+    padding: 16px
+  }
+  .footer__button-submit-text{
+    display: none;
+  }
+  .footer__smile {
+    margin-left: 0px;
+  }
+}
+
+@media screen and (max-width: 438px) {
+  .footer__input {
+    max-width: 229px;
+  }
+}
+
+@include mobile {
+  .footer {
+    padding: 30px 0 20px 0;
+    &__logo {
+      margin: 0 0 184px 0;
+    }
+    &__label {
+      padding: 10px 0 0 0;
+    }
+  }
+  .footer__button-submit {
+    padding: 20px
+  }
+}
