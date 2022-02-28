@@ -10,6 +10,33 @@ const footerButtonSubmitText = document.querySelector('.footer__button-submit-te
 const footerSmile = document.querySelector('.footer__smile')
 const footerButtonSubmit = document.querySelector('.footer__button-submit')
 
+const btnTheme = document.querySelector('.theme')
+const docEl = document.documentElement
+
+
+function toggleTheme(item) {
+  if (item.hasAttribute('data-theme')) {
+    item.removeAttribute('data-theme')
+    localStorage.removeItem('theme', 'dark')
+  } else {
+    item.setAttribute('data-theme', 'dark')
+    localStorage.setItem('theme', 'dark')
+  }
+}
+
+function locStr(item) {
+  if (localStorage.getItem('theme') !== null) {
+    docEl.setAttribute('data-theme', 'dark')
+  }
+}
+
+btnTheme.addEventListener('click', () => {
+  toggleTheme(docEl)
+})
+
+locStr(docEl)
+
+
 form.addEventListener('submit', (e) => {
   e.preventDefault()
   if (formInput.value) {

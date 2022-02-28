@@ -8,7 +8,7 @@
   }
   &__copywriting {
     @include text-regular(12px, 400, normal, 18px);
-    color: $button-color;
+    color: var(--footer-color);
     margin: 0;
     text-align: right;
     transform: translateY(-19px);

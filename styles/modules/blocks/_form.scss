@@ -10,7 +10,7 @@
     border: none;
     height: 50px;
     @include text-regular(14px, 400, normal, 24px);
-    color: $primary-color;
+    color: var(--form-imput);
     outline:none;
     padding: 13px 16px;
     width: 100%;
@@ -24,7 +24,7 @@
   &__button-submit {
     display: flex;
     box-sizing: border-box;
-    background-color: $button-color;
+    background-color: var(--footer-color);
     height: 50px;
     border: none;
     border-radius: 0px 8px 8px 0px;
@@ -43,11 +43,12 @@
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
+    color: var(--logo-txt)
   }
 
   &__label {
     @include text-regular(12px, 400, normal, 18px);
-    color: $button-color;
+    color: var(--footer-color);
     padding: 12px 0 0 11px;
   }
 

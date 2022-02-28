@@ -10,7 +10,7 @@
   }
   &__item {
     padding: 40px;
-    background-color: $color-cards;
+    background-color: var(--cards-color);
     border-radius: 16px;
     &:hover {
       cursor: pointer;
@@ -19,17 +19,17 @@
   }
   &__subtitle {
     @include text-regular(18px, 400, normal, 18px);
-    color: $color-text;
+    color: var(--subtitle-color);
     margin: 0 0 20px 0;
   }
   &__title {
     @include text-regular(32px, 400, normal, 32px);
-    color: $primary-color;
+    color: var(--logo-txt);
     margin: 0 0 40px 0;
   }
   &__text {
     @include text-regular(32px, 400, normal, 40px);
-    color: $color-text;
+    color: var(--subtitle-color);
     margin: 0 0 40px 0;
   }
   &__price {

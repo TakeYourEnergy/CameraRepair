@@ -4,11 +4,13 @@
   &__title {
     @include text-regular(112px, 400, normal, 112px);
     margin: 0 0 20px 0;
+    color: var(--logo-txt);
   }
 
   &__subtitle {
     @include text-regular(80px, 400, normal, 70px);
     margin: 0 0 230px;
+    color: var(--logo-txt);
   }
 }
 

@@ -1,5 +1,5 @@
 .page {
-  background-color: $primary-bg-color;
+  background-color: var(--main-bg);
   max-width: $max-width;
   min-width: $min-width;
   margin: 0 auto;

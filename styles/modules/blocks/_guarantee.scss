@@ -3,6 +3,7 @@
   &__title {
     @include text-regular(32px, 400, normal, 40px);
     margin: 0 0 60px 0;
+    color: var(--logo-txt);
   }
   &__box {
     display: grid;
@@ -14,18 +15,18 @@
   }
   &__item {
     padding: 20px;
-    background-color: $color-cards;
+    background-color: var(--cards-color);
     border-radius: 10px;
   }
   &__subtitle {
     @include text-regular(18px, 500, normal, 18px);
-    color: $subtitle-card;
+    color: var(--logo-txt);
     margin: 0 0 38px 0;
   }
   &__text {
     @include text-regular(15px, 400, normal, 19px);
     margin: 0;
-    color: $color-text;
+    color: var(--subtitle-color);
   }
 }
 

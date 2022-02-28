@@ -1,6 +1,7 @@
 .wrapper {
   margin: 0 160px;
   max-width: 1140px;
+  position: relative;
 }
 
 @include netbook {

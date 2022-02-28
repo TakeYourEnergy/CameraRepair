@@ -1,0 +1,22 @@
+:root {
+  --main-bg: #000000;
+  --logo-txt: #FFFFFF;
+  --subtitle-color: #8E8E98;
+  --footer-color: #47474C;
+  --cards-color: #1C1C1E;
+  --form-imput: #FFFFFF;
+
+  --toogle-btn: url(../images/sun-summer-svgrepo-com.svg);
+}
+
+
+:root[data-theme='dark'] {
+  --main-bg: #FFFFFF;
+  --logo-txt: #000000;
+  --subtitle-color: #4545b4;
+  --footer-color: #00a1ff;;
+  --cards-color: #1297e4;
+  --form-imput: #000000;
+
+  --toogle-btn: url(../images/sun-svgrepo-com.svg);
+}

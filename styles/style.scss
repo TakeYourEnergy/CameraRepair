@@ -1,7 +1,7 @@
 @import '../vendor/normalize';
 @import '../vendor/fonts';
 
-
+@import '../styles/modules/blocks/root';
 @import '../styles/modules/mixin';
 @import '../styles/modules/variables';
 
@@ -17,3 +17,4 @@
 @import '../styles/modules/blocks/support';
 @import '../styles/modules/blocks/line';
 @import '../styles/modules/blocks/footer';
+@import '../styles/modules/blocks/theme';

@@ -8,6 +8,7 @@
     @include text-regular(22px, 400, normal, 30px);
     display: flex;
     align-items: center;
+    color: var(--logo-txt);
   }
 
   &__notice {
